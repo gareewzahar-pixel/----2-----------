@@ -1,0 +1,76 @@
+.memelist {
+    list-style: none;            
+}
+
+.memelist li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.memelist li:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    width: 24px;
+    height: 24px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=6647b44e5f9f3d089e0241200cf23471_l-10555703-images-thumbs&n=13");
+    background-size: cover;
+}
+
+
+.memelist li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    width: 24px;
+    height: 24px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=9b7367c5c7833375082aa6a2de553010ec17f814-4576810-images-thumbs&n=13");
+    background-size: cover;
+}
+
+
+.memelist li:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    width: 24px;
+    height: 24px;
+    background-image: url("https://avatars.mds.yandex.net/i?id=b9f82917359fba23f3fc266211b332a4b6f6b119-7758299-images-thumbs&n=13");
+    background-size: cover;
+}
+
+.button {
+    color: red;
+    /* цвет текста */
+    font-size: 10px;
+    /* размер текста */
+    text-decoration: none;
+    /* убирает подчеркивание */
+    background-color: rgb(196, 255, 58);
+    /* цвет фона */
+    padding: 20px 20px; 
+    /* внутренние отступы */
+    border-radius: 20px;
+    /* скругление углов */
+    display: inline-block;
+    border: 2px solid red;
+    /* рамка */
+    margin: 20px 20px;
+    /* внешние отступы */
+    transition: background-color 0.3s, color 0.3s;
+    /* Плавный переход */
+}
+
+.button:hover {
+    /* эффект при наведении */
+    background-color: red;
+    color: white;
+}
+
+
+.button:active {
+    /* эффект при нажатии */    
+    background-color: rgb(0, 0, 0);
+    color: red;
+}
